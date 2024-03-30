@@ -1,0 +1,35 @@
+using namespace std;
+
+int main()
+{
+    char operation;
+    double no1, no2, res;
+
+    cout << "Enter operator (+, -, *, /): ";
+    cin >> operation;
+
+    cout << "Enter the first numbers: ";
+    cin >> no1;
+    cout<<"Enter the second number: ";
+    cin>> no2;
+    switch (operation) {
+        case '+':
+            res = no1 + no2;
+            break;
+        case '-':
+            res = no1 - no2;
+            break;
+        case '*':
+            res = no1 * no2;
+            break;
+        case '/':
+            if (no2 != 0) {
+                
+                res = no1 / no2;
+            } 
+            else 
+            {
+                cout << "Error: Division by zero is not allowed.";
+                return 1;
+            }
+            br…
