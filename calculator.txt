@@ -32,4 +32,4 @@ int main()
                 cout << "Error: Division by zero is not allowed.";
                 return 1;
             }
-            br…
+        
